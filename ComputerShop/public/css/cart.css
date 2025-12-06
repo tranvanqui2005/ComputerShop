@@ -1,0 +1,79 @@
+#cart-table .quantity-selector {
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    max-width: 110px;
+}
+
+#cart-table .quantity-selector .btn {
+    border-radius: 0;
+    border: none;
+    background-color: #f8f9fa;
+    color: #495057;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.9rem;
+    line-height: 1;
+    transition: background-color 0.15s ease-in-out;
+}
+
+#cart-table .quantity-selector .btn:hover {
+    background-color: #e2e6ea;
+}
+
+#cart-table .quantity-selector .btn:focus {
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+    z-index: 1;
+}
+
+#cart-table .quantity-selector .btn:disabled {
+    background-color: #f8f9fa;
+    color: #adb5bd;
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+
+#cart-table .quantity-selector .quantity-display {
+    text-align: center;
+    border: none;
+    border-left: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;;
+    width: 40px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0.3rem 0.1rem;
+    height: auto;
+    box-shadow: none !important;
+    -moz-appearance: textfield;
+    background-color: #fff !important;
+}
+
+#cart-table .quantity-selector input[type=number]::-webkit-inner-spin-button,
+#cart-table .quantity-selector input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#cart-table tbody tr.item-deselected {
+    opacity: 0.6;
+    background-color: #f8f9fa;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+#cart-table tbody tr {
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.cart-summary-box .d-flex span:first-child {
+    flex-grow: 1;
+}
+.cart-summary-box .d-flex span:last-child {
+    flex-shrink: 0;
+    text-align: right;
+}
+
+#cart-table .remove-item-btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}

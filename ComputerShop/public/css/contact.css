@@ -1,0 +1,66 @@
+/*--------------------------------------------------------------
+ * Contact Page Styles
+ *--------------------------------------------------------------
+ */
+
+/* Main section of the contact page */
+.contact-page-section {
+    /* You can add padding or background styles here if needed */
+}
+
+/* Card styling for contact information */
+.contact-info-card {
+    /* Add any custom styles for the information card here if required */
+}
+
+/* Styling for the list of contact details */
+.contact-details-list li {
+    /* Space between each contact information item */
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Remove the bottom border for the last item */
+.contact-details-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+/* Ensuring icons have a fixed width and are aligned correctly */
+.contact-details-list i.fa-fw {
+    /* Ensure the icon has a fixed width and is well-aligned */
+    width: 1.5em;
+}
+
+/* Card styling for the map, ensuring iframe doesn't overflow */
+.map-card {
+    overflow: hidden;
+}
+
+/* Map container to hold the iframe */
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Make the map fill the card-body height */
+    min-height: 450px; /* Minimum height for the map */
+}
+
+/* Styling for the iframe to fit perfectly within the map container */
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Remove the iframe's default border */
+}
+
+/*--------------------------------------------------------------
+ * Responsive Adjustments
+ *--------------------------------------------------------------*/
+@media (max-width: 991.98px) {
+    .map-container {
+        min-height: 350px; /* Reduce map height on tablets */
+    }
+}
